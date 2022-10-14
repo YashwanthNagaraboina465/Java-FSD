@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-sm border">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr class="table-danger">
+            <td>2</td>
+            <td>Max</td>
+            <td>Smith</td>
+            <td>msmith@gmail.com</td>
+          </tr>
+          <tr class="table-info">
+            <td>3</td>
+            <td>David</td>
+            <td>Walker</td>
+            <td>dwalker@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br /><br />
+
+    <!--
+        table-dark
+        table-striped
+        table-bordered
+        table-borderless
+        table-hover
+      -->
+
+    <div class="container">
+      <table class="table table-sm table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Max</td>
+            <td>Smith</td>
+            <td>msmith@gmail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>David</td>
+            <td>Walker</td>
+            <td>dwalker@gmail.com</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Max</td>
+            <td>Smith</td>
+            <td>msmith@gmail.com</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>David</td>
+            <td>Walker</td>
+            <td>dwalker@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- pagination -->
+      <nav>
+        <ul class="pagination justify-content-end pagination-sm">
+          <li class="page-item disabled">
+            <a href="#" class="page-link"><span>&laquo;</span></a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link"><span>&raquo;</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/bootstrap-5.2.1-dist/js/bootstrap.js"></script>
+  </body>
+</html>

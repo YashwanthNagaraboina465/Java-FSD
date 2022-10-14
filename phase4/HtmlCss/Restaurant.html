@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .container {
+        font-family: "Times New Roman";
+
+        margin-top: 10px;
+
+        height: 60px;
+        width: 2050px;
+      }
+      .navbar-brand {
+        float: left;
+        margin-left: 150px;
+      }
+      .navbar-toggler {
+        float: right;
+      }
+      .nav-item {
+        font-size: 25px;
+      }
+
+      .container2 {
+        font-family: "Times New Roman";
+        width: 100%;
+        height: auto;
+      }
+      .container1 {
+        margin-bottom: 6px;
+        padding: 5px;
+        width: 350px;
+        height: 50px;
+        float: right;
+        background-color: light;
+        border: dark;
+      }
+      .brand {
+        float: left;
+      }
+      .search {
+        float: left;
+      }
+      .submit {
+        float: right;
+      }
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- popper Bootstrap dropdown require Popper. js (https://popper.js.org) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="container">
+      <div class="container1 border rounded">
+        <form action="">
+          <div>
+            <input
+              class="search"
+              type="text"
+              id="name"
+              placeholder="search Food"
+            />
+          </div>
+          <div>
+            <input class="submit btn btn-dark" type="submit" id="name" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <br />
+    <nav>
+      <div class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container2">
+          <a class="navbar-brand" href="#home">
+            <img src="http://www.thetable.in/images/thetable-logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav1"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav1"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#address">Address</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--- home --->
+    <header
+      class="display-container"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Barbieri_-_ViaSophia25668.jpg/1024px-Barbieri_-_ViaSophia25668.jpg"
+        alt="the table"
+        width="1250"
+        height="650"
+      />
+      <div class="display-bottomleft">
+        <h1 class="large"><i>The Table-Our Dine</i></h1>
+      </div>
+    </header>
+<br/>
+    <!-- Toggler Contents-->
+    <div class="content" style="max-width:1250px">
+
+      <!-- About Section -->
+      <div class="row padding-64" id="about">
+        <div class="col m8 padding-large hide-small">
+         <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Table Setting" width="600" height="400">
+        </div>
+    
+        <div class="col m6 padding-large">
+          <h1 class="center">About Us</h1><br>
+          <h5 class="center"><i>Tradition since 1889</i></h5>
+          <p class="large">The Table, one of India’s most celebrated restaurants, has welcomed guests to enjoy its globally inspired cuisine and hospitality since opening in 2011. Located in the iconic Colaba area of Mumbai, The Table has been a trailblazer within the national restaurant community. From introducing the concept of small and large plates to providing a true farm to table experience with produce from its own farm, The Table continues to be at the forefront of Indian hospitality. With an ingredient-driven focus, global accents and nuances, the menu is a commitment to simplicity and purity of flavour, a philosophy inherited from San Francisco..</p>
+          
+        </div>
+      </div>
+      
+      <hr>
+    
+      <!-- Menu Section -->
+      <div class="row padding-64" id="menu">
+        <div class="col l6 padding-large">
+          <h1 class="center">Our Menu <i>#BestSellers</i></h1><br>
+          <h4><i>Quick Noodles</i></h4>
+          <p class="text-grey">Noodles tossed with veggies, lemon juice, peanuts and seasoned to the perfection. Kids would love this noodles recipe. Add seasoning according to your preference.</p><br>
+        
+          <h4><i>Szechwan Chilli Chicken</i></h4>
+          <p class="text-grey">A fiery side - fried chicken cooked with brown, green & white peppercorns and oriental spices. The spicy and tange flavour of schezwan sauce adds a bonus point to this dish.</p><br>
+        
+          <h4><i>East West Spring Rolls</i></h4>
+          <p class="text-grey">Popular chinese dish infused with a range of flavors, crisp vegetarian spring rolls with cheese, bell peppers and sun dried tomatoes. Serve them with a basil dip made with olives, Parmesan, mayo and a hint of garlic.</p><br>
+        
+         
+          <h4><i>Peri Peri Chicken Satay</i></h4>
+          <p class="text-grey">This chicken satay recipe has a spicy twist with the addition of fiery peri peri sauce.</p>    
+        </div>
+        
+        <div class="col l6 padding-large">
+          <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600" class="round image opacity-min" alt="Menu" style="width:100%">
+        </div>
+      </div>
+    <hr>
+     <br/>
+      <!-- Address Section -->
+      <div class="container padding-64" id="address">
+        <h1>Address</h1><br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <p class="text-dark large"><em>Address: GROUND FLOOR, KALAPESI TRUST BUILDING, OPP. DHANRAJ MAHAL, BELOW HOTEL SUBA PALACE, APOLLO BUNDER MARG, COLABA, MUMBAI 400039.</em></p>
+      </div>
+    
+      
+    <hr>
+      <br /> <br /> <br /> <br />
+      <hr>
+      <!-- Address Section -->
+      <div class="container padding-64" id="contact">
+        <h1>Contact Us</h1><br>
+       <h2><i> TIMINGS:</i></h2><p>
+          LUNCH | MONDAY - SATURDAY, 12:00 NOON TO 3:30 PM
+          DINNER | 7:00 PM TO 12:30 AM (LAST ORDERS)
+          HIGH TEA | 4:30 PM TO 6:30 PM (BY PRIOR RESERVATION)
+          SUNDAY BRUNCH | 11:00 AM TO 4: 00 PM</p>
+        <h3>our Mails:x@y</h3>
+        <h3>our Numbers:080-5545444,995956651118.</h3>
+
+      </div>
+      <hr>
+    
+        <br /><br />
+  </body>
+</html>
