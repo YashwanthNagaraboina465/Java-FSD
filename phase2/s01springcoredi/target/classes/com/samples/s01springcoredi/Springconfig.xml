@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="emp" class="com.samples.s01springcoredi.Employee">
+		<property name="id">
+			<value>23</value>
+		</property>
+		<property name="name">
+			<value>John</value>
+		</property>
+	</bean>
+
+	<bean name="emp2" class="com.samples.s01springcoredi.Employee">
+		<property name="id">
+			<value>43</value>
+		</property>
+		<property name="name" value="nioo4" />
+	</bean>
+
+	<bean name="emp3" class="com.samples.s01springcoredi.Employee"
+		p:id="1" p:name="jiefecn" />
+	<bean name="emp7" class="com.samples.s01springcoredi.hospital">
+		<property name="name">
+			<value>rhthrth</value>
+		</property>
+		<property name="dept">
+			<list>
+				<value>tntnty</value>
+				<value>tntnty</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="emp8" class="com.samples.s01springcoredi.cardealer">
+		<property name="name">
+			<value>raja</value>
+		</property>
+		<property name="cars">
+			<map>
+				<entry key="2" value="wferer" />
+				<entry key="25" value="fegeg" />
+
+			</map>
+		</property>
+	</bean>
+	<bean name="emp9" class="com.samples.s01springcoredi.Item"
+		p:id="2" p:name="dfgdf" p:price="two" p:quantity="5" init-method="m1" />
+
+	<bean name="emp10"
+		class="com.samples.s01springcoredi.ShoppingMall" p:item1-ref="emp9" />
+
+	<context:annotation-config />
+</beans>

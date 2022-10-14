@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean name="emp9" class="com.samples.s01springcoredi.Constructor.Item"
+		p:id="2" p:name="dfgdf" p:price="two" p:quantity="5" />
+
+	<bean name="emp10"
+		class="com.samples.s01springcoredi.Constructor.ShoppingMall" p:item1-ref="emp9" >
+		<constructor-arg>
+		<ref bean ="emp9"/>
+		</constructor-arg>
+		<constructor-arg>
+		<value>5</value>
+		</constructor-arg>
+		
+</bean>
+	<context:annotation-config />
+</beans>
